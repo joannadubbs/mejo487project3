@@ -1,0 +1,159 @@
+@supports(grid-area:auto){
+
+  .site{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 50px 200px 1000px 50px;
+    grid-template-areas:
+      'hd hd hd hd hd hd hd hd hd hd hd hd'
+      'nv nv nv nv nv nv nv nv nv nv nv nv'
+      'left title title title title title title title . . . right'
+      'left main main main main main main main ad ad ad right'
+      'ft ft ft ft ft ft ft ft ft ft ft ft';
+
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.header{
+  grid-area: hd;
+  background-color: #000000;
+  padding: 30px 0px 0px 0px;
+
+}
+
+.navbar{
+  grid-area: nv;
+  background-color:#E6E6E6;
+  outline: 1px solid #999999;
+}
+
+.leftsidebar{
+  grid-area: left;
+}
+
+.rightsidebar{
+  grid-area:right;
+}
+
+.sideads{
+  grid-area: ad;
+  font-family: Arial;
+  font-size: 10px;
+  color: #999;
+}
+
+.title{
+  grid-area:title;
+  margin-top: 30px;
+}
+
+.main{
+  grid-area:main;
+  margin-bottom: 18px;
+  font-family: Georgia,'Droid Serif',serif;
+  font-size: 15px/24px;
+  color: #333;
+}
+
+.footer{
+  grid-area:ft;
+}
+
+h1{
+    font-family: Georgia,'Droid Serif',serif;
+    font-size: 54px;
+}
+
+.fab{
+  height: 20px;
+  margin-right: 25px;
+}
+
+.fa-facebook-f{
+  color:#23408F;
+}
+
+.fa-twitter{
+  color:#4FABDA;
+}
+
+.links{
+  color: #4591B8;
+  font-family: Arial, sans-serif;
+}
+
+#byline{
+  font-family: Georgia;
+}
+
+.byline-cap{
+  color: #666;
+  font-size: 14px;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: #FF5443;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.author, a{
+  color:  #FF5443;
+  font-family: Georgia;
+  text-decoration: none;
+}
+
+#firstletter {
+    float: left;
+    width: 0.7em;
+    font-size: 300%;
+    font-family: Georgia;
+    line-height: 50%;
+    padding-top:5px;
+    font-weight:700;
+    padding-right: 10px;
+}
+
+#adcaption{
+  margin-top: 8px;
+}
+
+.caption{
+  font-family: Arial;
+  font-size: 12px;
+  color: #666;
+}
+
+#bottomline{
+font-family: Arial;
+}
+
+@media screen and (max-width:767px){
+  .rightsidebar, .leftsidebar, .sideads {
+    display:none;
+
+  }
+
+  .main{
+    grid-column: 1/4;
+  }
+  .site{
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 30px 500px 30px;
+    grid-template-areas:
+      'hd hd hd hd'
+      'nv nv nv nv'
+      'main main main main'
+      'ft ft ft ft'
+      grid-gap: 0.5em;
+  }
+}
+}
