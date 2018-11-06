@@ -14,6 +14,7 @@
     <!---Font Awesome CDN-->
     <script src="https://use.fontawesome.com/5fb475e2d1.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
   </head>
 
     <body class="site">
@@ -22,9 +23,11 @@
         <div class="navbar"></div>
         <div class="leftsidebar"></div>
         <div class="title">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
+        </div>
           <h1>Insert Article Title Here</h1>
         </div>
         <div class="main">
@@ -34,31 +37,121 @@
           </p>
           <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
           <p class="caption">Copyright © 2018, The San Diego Union-Tribune</p>
-          <span id="firstletter">T</span>his is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-          This is some text. This is some text.
-        </p>
+          <div class="story">
+            <span id="firstletter">T</span>his is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+          <br/>
+          </div>
+
+        <div id="container" ></div>
+
+        <div id="bargraph"></div>
+        <table id="table_id" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Age</th>
+                <th>2001-2002</th>
+                <th>2003-2004</th>
+                <th>2005-2006</th>
+                <th>2007-2008</th>
+                <th>2009-2010</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0-4 yrs</td> <!--Header-->
+                <td>0-4</td>     <!--2001-2002-->
+                <td>0-4</td>     <!--2003-2004-->
+                <td>0-4</td>     <!--2005-2006-->
+                <td>0-4</td>     <!--2007-2008-->
+                <td>0-4</td>     <!--2009-2010-->
+            </tr>
+
+            <tr>
+                <td> 5-14 yrs</td> <!--Header-->
+                <td>0-4</td>     <!--2001-2002-->
+                <td>0-4</td>     <!--2003-2004-->
+                <td>0-4</td>     <!--2005-2006-->
+                <td>0-4</td>     <!--2007-2008-->
+                <td>0-4</td>     <!--2009-2010-->
+            </tr>
+
+            <tr>
+                <td> 15 - 24 yrs</td> <!--Header-->
+                <td>0-4</td>          <!--2001-2002-->
+                <td>0-4</td>          <!--2003-2004-->
+                <td>0-4</td>          <!--2005-2006-->
+                <td>0-4</td>          <!--2007-2008-->
+                <td>0-4</td>          <!--2009-2010-->
+            </tr>
+
+            <tr>
+                <td>24 - 44 yrs</td> <!--Header-->
+                <td>0-4</td>         <!--2001-2002-->
+                <td>0-4</td>         <!--2003-2004-->
+                <td>0-4</td>         <!--2005-2006-->
+                <td>0-4</td>         <!--2007-2008-->
+                <td>0-4</td>         <!--2009-2010-->
+            </tr>
+
+            <tr>
+                <td>45 - 64 yrs</td> <!--Header-->
+                <td>0-4</td>     <!--2001-2002-->
+                <td>0-4</td>     <!--2003-2004-->
+                <td>0-4</td>     <!--2005-2006-->
+                <td>0-4</td>     <!--2007-2008-->
+                <td>0-4</td>     <!--2009-2010-->
+            </tr>
+
+            <tr>
+                <td> 65+ yrs     <!--Header-->
+                <td>0-4</td>     <!--2001-2002-->
+                <td>0-4</td>     <!--2003-2004-->
+                <td>0-4</td>     <!--2005-2006-->
+                <td>0-4</td>     <!--2007-2008-->
+                <td>0-4</td>     <!--2009-2010-->
+            </tr>
+
+        </tbody>
+
+    </table>
+
           <p id="bottomline">
             <strong>This article is related to:</strong>
             <span class="links">Nutrition</span>
           </p>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
-        </div>
-        <div class="sideads">
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
+          </div>
+
+        </div>  <!--Closes Main Section-->
+
+        <div class="sideads"> <!--Advertisement on the Right Side-->
           <img src="img/ad.jpg" alt="Advertisement"/>
           <p id="adcaption">ADVERTISEMENT</p>
         </div>
-        <div class="rightsidebar"></div>
-        <div class="footer"></div>
+
+        <div class="rightsidebar"></div> <!--Margin Right-->
+
+        <div class="footer"></div> <!--Footer-->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+        <script src="js/scripts.js"></script>
 
     </body>
 
