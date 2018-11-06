@@ -36,16 +36,16 @@ $(function(){
       var myChart = Highcharts.chart('container', {
 
           title: {
-              text: 'Solar Employment Growth by Sector, 2010-2016'
+              text: 'Rates of Emergency Department Visits, Hospitalizations, and Deaths in the US for Traumatic Brain Injuries from 2001-2010'
           },
 
           subtitle: {
-              text: 'Source: thesolarfoundation.com'
+              text: 'Source: 	Centers for Disease Control and Prevention'
           },
 
           yAxis: {
               title: {
-                  text: 'Number'
+                  text: 'Rate per 100,000 People in the US'
               }
           },
           legend: {
@@ -107,10 +107,10 @@ Highcharts.chart('bargraph', {
         type: 'column'
     },
     title: {
-        text: 'Rates of TBI Per Year by Gender'
+        text: 'Rates of Combined Emergency Department, Hospitalizations, and Deaths for Traumatic Brain Injuries by Gender'
     },
     subtitle: {
-        text: 'Source: '
+        text: 'Source: 	Centers for Disease Control and Prevention'
     },
     xAxis: {
         categories: [
@@ -131,7 +131,7 @@ Highcharts.chart('bargraph', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Insert here'
+            text: 'Rate per 100,000 People in the US'
         }
     },
     tooltip: {
@@ -150,12 +150,12 @@ Highcharts.chart('bargraph', {
     },
     series: [{
         name: 'Male',
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6],
+        data: [626.4, 660.6, 649.8, 732.1, 732.3, 689.6, 634.1, 863.6, 982.3, 932.1],
         color: '#369999'
 
     }, {
         name: 'Female',
-        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6],
+        data: [420.9, 419.3, 426.3, 475.9, 503.9, 504.7, 502.5, 599, 607.6, 720.3],
         color: '#c8e6e6'
     }]
 });
