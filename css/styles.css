@@ -4,7 +4,7 @@
     margin: 0 auto;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 50px 200px auto auto;
+    grid-template-rows: 80px 50px auto auto auto;
     grid-template-areas:
       'hd hd hd hd hd hd hd hd hd hd hd hd'
       'nv nv nv nv nv nv nv nv nv nv nv nv'
@@ -22,8 +22,24 @@
 .header{
   grid-area: hd;
   background-color: #000000;
-  padding: 30px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+  display: flex;
 }
+
+/*Setting Flex Basis for Header*/
+
+.header-left{
+  flex-basis:35%;
+  padding: 0 30;
+}
+.header-center{
+  flex-basis:30%;
+}
+.header-right{
+  flex-basis:35%;
+  flex-direction: flex-end;
+}
+
 
 .navbar{
   grid-area: nv;
@@ -49,6 +65,7 @@
 .title{
   grid-area:title;
   margin-top: 30px;
+  margin-bottom: -15px;
 }
 
 .main{
@@ -58,20 +75,32 @@
   font-size: 15px/24px;
   color: #333;
 }
+.line{
+  grid-area:line;
 
+}
 .footer{
   grid-area:ft;
   border-top: 1px solid #CCC;
 }
 
+.footer-margin{
+  margin-left: 10%;
+}
+
 h1{
     font-family: Georgia,'Droid Serif',serif;
+    font-weight: lighter;
     font-size: 54px;
 }
 
 .fab{
   height: 20px;
   margin-right: 25px;
+}
+
+.social{
+  margin-bottom: -20px;
 }
 
 .fa-facebook-f{
@@ -88,7 +117,7 @@ h1{
 }
 
 #byline{
-  font-family: Georgia;
+  font-family: Georgia,'Droid Serif',serif;;
 }
 
 .byline-cap{
@@ -107,15 +136,16 @@ h1{
 
 .author, a{
   color:  #FF5443;
-  font-family: Georgia;
+  font-family: Georgia,'Droid Serif',serif;;
   text-decoration: none;
+  font-size: 14px;
 }
 
 #firstletter {
     float: left;
     width: 0.7em;
     font-size: 300%;
-    font-family: Georgia;
+    font-family: Georgia,'Droid Serif',serif;
     line-height: 50%;
     padding-top:5px;
     font-weight:700;
@@ -128,7 +158,7 @@ h1{
 
 .caption{
   font-family: Arial;
-  font-size: 12px;
+  font-size: 10px;
   color: #666;
 }
 
@@ -152,6 +182,26 @@ font-family: Arial;
 
 #table_id{
   width:100%;
+}
+
+svg.highcharts-root{
+  font-family: Georgia,'Droid Serif',serif !important;
+}
+
+#tableheader{
+font-family: Georgia,'Droid Serif',serif !important;
+color: #333333;
+font-size: 18px;
+fill: #333333;
+text-align: center;
+}
+
+#tablesubheader-source{
+  font-family: Georgia,'Droid Serif',serif !important;
+  color: #666666;
+  fill: #666666;
+  font-size:12px;
+  text-align:center;
 }
 
 /*.footer-text{
@@ -218,7 +268,7 @@ color: #000;
   margin: 10;
 }
 h1{
-  margin-top: 10px;
+  margin: 0 0 0 0 !important;
 }
   #table_id{
     font-size: 0.8em;

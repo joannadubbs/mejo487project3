@@ -20,12 +20,21 @@
     <body class="site">
 
         <div class="header flex">
-          <i class="fas fa-bars" style="color:white"></i>
-            <p style="color:white">SECTIONS</p>
-            <i class="fas fa-search" style="color:white"></i>
-            <p style="color:white">SEARCH</p>
-            <img src="img/logo.png" alt="Header Logo" height="40"/>
-            <img src="img/avatar.png" alt="Avatar Logo"/>
+          <div class="header-left flex">
+              <i class="fas fa-bars" style="color:white"></i>
+              <p id="header-sections" style="color:white">SECTIONS</p>
+              <i class="fas fa-search" style="color:white"></i>
+              <p id="header-search" style="color:white">SEARCH</p>
+          </div>
+          <div class="header-center flex">
+            <img id="header-logo"src="img/logo.png" alt="Header Logo" height="30"/>
+          </div>
+          <div class= "header-right flex">
+            <img id="header-avatar" src="img/avatar.png" alt="Avatar Logo" style="height:40"/>
+          </div>
+
+
+
         </div>
 
         <div class="navbar"></div>
@@ -39,10 +48,12 @@
           <h1>Insert Article Title Here</h1>
         </div>
         <div class="main">
+          <img src="img/tbi.jpg" alt="CAT scan" style="width:95% !important"/>
+          <p class="caption" style="color:#999; font-size:12px">CAT Scan for Traumatic Brain Injuries. (Getty Images)</p>
           <p id="byline" class="flex">
             <img src="img/headshot.jpg" alt="Headshot" height="70"/>
             <span class="byline-cap" style="margin: 0 3 0 10">By </span>
-            <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+            <span class="author"><a href="http://www.joannalynwilliams.com"><strong> Joanna Williams</strong></a> <span class="dot" style="font-size:8px;"></span><strong> Contact Reporter</strong></span>
           </p>
           <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
           <div class="story">
@@ -58,10 +69,11 @@
             This is some text. This is some text.
           <br/>
           </div>
-
+          <br />
         <div id="container" ></div>
-
+        <br />
         <div id="bargraph"></div>
+        <br />
         <table id="table_id" class="display" style="width:100%">
           <p id="tableheader">Rates of Traumatic Brain Injury related Deaths per 100,000 people by Age Group in the United States, 2001-2010</p>
           <p id="tablesubheader-source">Source: Centers for Disease Control and Prevention</p>
@@ -130,6 +142,7 @@
         </tbody>
 
     </table>
+    <br />
 
           <!--<p id="footer-email" class="footer-text"><strong>joannalw@live.unc.edu</strong></p>
           <div class="footer-box">
@@ -155,76 +168,75 @@
         </div>
 
         <div class="rightsidebar"></div> <!--Margin Right-->
-
+        <div class="line"></div>
         <div class="footer"><!--Footer-->
         <!--Additional Article #1-->
           <div class="title">
-            <div class="social">
+            <div class="social footer-margin">
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
               <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
           </div>
-            <h1>Insert Article Title Here</h1>
+            <h1 class="footer-margin">Infant Mortality Rates in the US are Higher than Other Developed Countries</h1>
           </div>
-          <div class="main">
-            <p id="byline" class="flex">
+            <p id="byline" class="flex footer-margin">
               <img src="img/headshot.jpg" alt="Headshot" height="70"/>
               <span class="byline-cap" style="margin: 0 3 0 10">By </span>
-              <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+              <span class="author"><a href="http://www.joannalynwilliams.com"><strong>  Joanna Williams</strong></a></span>
             </p>
-            <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
-            <div class="story" style="margin-bottom: 8">
-              <span id="firstletter">T</span>his is some text.
+            <p class="caption footer-margin">NOVEMBER 6, 2018, 12:00 PM</p>
+            <div class="story footer-margin" style="margin-bottom: 8">
+              <span id="firstletter">T</span>he United States has higher infant mortality rates than any other developed country.
             <br/>
             </div>
-            <a href="#"> Read Full Story </a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+            <a href="#"><strong> Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
 
             <!--Additional Article #2-->
               <div class="title" style="border-top: 1px solid #CCC">
                 <br />
-                <div class="social">
+                <div class="social footer-margin">
                   <i class="fab fa-facebook-f"></i>
                   <i class="fab fa-twitter"></i>
                   <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
               </div>
-                <h1>Insert Article Title Here</h1>
+                <h1 class="footer-margin">Why Doctors are Now Screening Pregnant Women for Thyroid Issues</h1>
               </div>
-              <div class="main">
-                <p id="byline" class="flex">
+                <p id="byline" class="flex footer-margin">
                   <img src="img/headshot.jpg" alt="Headshot" height="70"/>
                   <span class="byline-cap" style="margin: 0 3 0 10">By </span>
-                  <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+                  <span class="author"><a href="http://www.joannalynwilliams.com"><strong>  Joanna Williams</strong></a></span>
                 </p>
-                <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
-                <div class="story" style="margin-bottom: 8">
-                  <span id="firstletter">T</span>his is some text.
+                <p class="caption footer-margin">NOVEMBER 4, 2018, 12:00 PM</p>
+                <div class="story footer-margin" style="margin-bottom: 8">
+                  <span id="firstletter">D</span>octors are now screening pregnant patients for thyroid issues.
                 <br/>
                 </div>
-                <a href="#"> Read Full Story </a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+                <a href="#"><strong> Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
 
                 <!--Additional Article #3-->
                   <div class="title" style="border-top: 1px solid #CCC">
                     <br />
-                    <div class="social">
+                    <div class="social footer-margin">
                       <i class="fab fa-facebook-f"></i>
                       <i class="fab fa-twitter"></i>
                       <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
                   </div>
-                    <h1>Insert Article Title Here</h1>
+                    <h1 class="footer-margin"> 10 Foods You Should Always Buy Organic, According to Scientists </h1>
                   </div>
-                  <div class="main">
-                    <p id="byline" class="flex">
+                    <p id="byline" class="flex footer-margin">
                       <img src="img/headshot.jpg" alt="Headshot" height="70"/>
                       <span class="byline-cap" style="margin: 0 3 0 10">By </span>
-                      <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+                      <span class="author"><a href="http://www.joannalynwilliams.com"><strong>  Joanna Williams</strong></a></span>
                     </p>
-                    <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
-                    <div class="story" style="margin-bottom: 8">
-                      <span id="firstletter">T</span>his is some text.
+                    <p class="caption footer-margin">NOVEMBER 2, 2018, 12:00 PM</p>
+                    <div class="story footer-margin" style="margin-bottom: 8">
+                      <span id="firstletter">A</span> recent study has found that some foods you may want to buy organic. 
                     <br/>
                     </div>
-                    <a href="#"> Read Full Story </a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
-
+                    <a href="#"><strong>Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+                    <br />
+                    <br />
+                    <br />
         </div> <!--Closes Footer-->
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
