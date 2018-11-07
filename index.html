@@ -19,7 +19,15 @@
 
     <body class="site">
 
-        <div class="header"><img src="img/logo.png" alt="Header Logo" height="40"/></div>
+        <div class="header flex">
+          <i class="fas fa-bars" style="color:white"></i>
+            <p style="color:white">SECTIONS</p>
+            <i class="fas fa-search" style="color:white"></i>
+            <p style="color:white">SEARCH</p>
+            <img src="img/logo.png" alt="Header Logo" height="40"/>
+            <img src="img/avatar.png" alt="Avatar Logo"/>
+        </div>
+
         <div class="navbar"></div>
         <div class="leftsidebar"></div>
         <div class="title">
@@ -31,12 +39,12 @@
           <h1>Insert Article Title Here</h1>
         </div>
         <div class="main">
-          <p id="byline">
-            <span class="byline-cap">By </span>
-            <span class="author"><a href="http://www.joannalynwilliams.com">Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+          <p id="byline" class="flex">
+            <img src="img/headshot.jpg" alt="Headshot" height="70"/>
+            <span class="byline-cap" style="margin: 0 3 0 10">By </span>
+            <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
           </p>
           <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
-          <p class="caption">Copyright © 2018, The San Diego Union-Tribune</p>
           <div class="story">
             <span id="firstletter">T</span>his is some text.
             This is some text. This is some text.
@@ -123,15 +131,21 @@
 
     </table>
 
+          <!--<p id="footer-email" class="footer-text"><strong>joannalw@live.unc.edu</strong></p>
+          <div class="footer-box">
+            <p id="footer-box-toptext" class="footer-text"><strong>Sign up for the North County newsletter and get essential news and compelling feature stories from North San Diego County delivered to your inbox.</strong></p>
+          </div>  THIS IS CODE FROM AN UPDATE ON THEIR WEBSITE...Omitting because it does not follow the style of the old article I'm referencing-->
+          <p class="caption">Copyright © 2018, The San Diego Union-Tribune</p>
           <p id="bottomline">
             <strong>This article is related to:</strong>
-            <span class="links">Nutrition</span>
+            <span class="links">Health</span>
           </p>
           <div class="social">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
           </div>
+          <a href="#" class="button flex"><strong>BE THE FIRST TO COMMENT</strong></a>
 
         </div>  <!--Closes Main Section-->
 
@@ -142,7 +156,76 @@
 
         <div class="rightsidebar"></div> <!--Margin Right-->
 
-        <div class="footer"></div> <!--Footer-->
+        <div class="footer"><!--Footer-->
+        <!--Additional Article #1-->
+          <div class="title">
+            <div class="social">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
+          </div>
+            <h1>Insert Article Title Here</h1>
+          </div>
+          <div class="main">
+            <p id="byline" class="flex">
+              <img src="img/headshot.jpg" alt="Headshot" height="70"/>
+              <span class="byline-cap" style="margin: 0 3 0 10">By </span>
+              <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+            </p>
+            <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
+            <div class="story" style="margin-bottom: 8">
+              <span id="firstletter">T</span>his is some text.
+            <br/>
+            </div>
+            <a href="#"> Read Full Story </a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+
+            <!--Additional Article #2-->
+              <div class="title" style="border-top: 1px solid #CCC">
+                <br />
+                <div class="social">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
+              </div>
+                <h1>Insert Article Title Here</h1>
+              </div>
+              <div class="main">
+                <p id="byline" class="flex">
+                  <img src="img/headshot.jpg" alt="Headshot" height="70"/>
+                  <span class="byline-cap" style="margin: 0 3 0 10">By </span>
+                  <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+                </p>
+                <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
+                <div class="story" style="margin-bottom: 8">
+                  <span id="firstletter">T</span>his is some text.
+                <br/>
+                </div>
+                <a href="#"> Read Full Story </a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+
+                <!--Additional Article #3-->
+                  <div class="title" style="border-top: 1px solid #CCC">
+                    <br />
+                    <div class="social">
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
+                  </div>
+                    <h1>Insert Article Title Here</h1>
+                  </div>
+                  <div class="main">
+                    <p id="byline" class="flex">
+                      <img src="img/headshot.jpg" alt="Headshot" height="70"/>
+                      <span class="byline-cap" style="margin: 0 3 0 10">By </span>
+                      <span class="author"><a href="http://www.joannalynwilliams.com"> Joanna Williams</a> <span class="dot" style="font-size:8px;"></span> Contact Reporter</span>
+                    </p>
+                    <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
+                    <div class="story" style="margin-bottom: 8">
+                      <span id="firstletter">T</span>his is some text.
+                    <br/>
+                    </div>
+                    <a href="#"> Read Full Story </a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+
+        </div> <!--Closes Footer-->
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
