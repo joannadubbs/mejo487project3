@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.header{
+.header {
   font-size: 11px;
   font-family: Arial,sans-serif;
   grid-area: hd;
@@ -42,7 +42,7 @@ padding-left: 75px;
   padding-left: 370px;
 }
 
-.navbar{
+.navbar,{
   grid-area: nv;
   background-color:#E6E6E6;
   outline: 1px solid #999999;
@@ -279,11 +279,41 @@ color: #000;
   color:white;
 }
 
+.mobile-section{
+  display: none;
+}
+
+.mobile-header{
+  font-size: 11px;
+  font-family: Arial,sans-serif;
+  grid-area: hd;
+  padding: 5 0 5 10;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.mobile-navbar,{
+  grid-area: nv;
+  background-color: #E6E6E6;
+  outline: 1px solid #999999;
+  display: flex;
+  font-size:8px;
+  font-family: Arial,sans-serif;
+  color: #666;
+  text-transform: uppercase;
+}
+
+
 /*Footer Section Styling*/
 
 
 @media screen and (max-width:767px){
-  .rightsidebar, .leftsidebar, .sideads {
+  .mobile-section, .mobile-navbar{
+    display:inline !important;
+  }
+
+  .rightsidebar, .leftsidebar, .sideads, .header, .navbar {
     display:none;
 
   }
@@ -298,7 +328,8 @@ color: #000;
   margin: 10;
 }
 h1{
-  margin: 0 0 0 0 !important;
+  margin: 15 0 0 0 !important;
+  font-size: 30px !important;
 }
   #table_id{
     font-size: 0.8em;
@@ -312,7 +343,7 @@ h1{
     margin: 10px auto;
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 60px 200px auto auto;
+    grid-template-rows: 80px 60px auto auto auto;
     grid-template-areas:
       'hd'
       'nv'
