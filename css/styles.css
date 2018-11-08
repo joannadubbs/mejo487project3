@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.header {
+.header{
   font-size: 11px;
   font-family: Arial,sans-serif;
   grid-area: hd;
@@ -42,7 +42,7 @@ padding-left: 75px;
   padding-left: 370px;
 }
 
-.navbar,{
+.navbar{
   grid-area: nv;
   background-color:#E6E6E6;
   outline: 1px solid #999999;
@@ -234,27 +234,6 @@ text-align: center;
   text-align:center;
 }
 
-/*.footer-text{
-  margin-bottom: 18px;
-  font: 15px Georgia,'Droid Serif',serif;
-}
-
-.footer-box{
-  background-color: #E0E0E0;
-    border-radius: 3px;
-    box-sizing: border-box;
-    margin: 20px 0 29px 0;
-    padding: 20px 20px 18px;
-}
-
-#footer-email{
-    color: #333;
-}
-
-#footer-box-toptext{
-color: #000;
-}*/
-
 .button {
     border: 1px solid #FF5443;
     color: #FF5443;
@@ -279,44 +258,56 @@ color: #000;
   color:white;
 }
 
-.mobile-section{
-  display: none;
-}
-
-.mobile-header{
+.mobile-head{
+  grid-area:mbhd;
+  display: none !important;
+  background-color: #000000;
   font-size: 11px;
   font-family: Arial,sans-serif;
-  grid-area: hd;
-  padding: 5 0 5 10;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
+  display: inline-block;
+  padding: 20 0 0 20;
 }
 
-.mobile-navbar,{
-  grid-area: nv;
+.mobile-navbar{
+  grid-area:mbnv;
+  display: none !important;
   background-color: #E6E6E6;
-  outline: 1px solid #999999;
+  font-size: 12px;
   display: flex;
-  font-size:8px;
-  font-family: Arial,sans-serif;
   color: #666;
-  text-transform: uppercase;
+  padding-left: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #999999;
 }
 
+.mobile-text{
+  padding: 20 0 0 0;
+  color: #666;
+}
+
+.mobile-cloud{
+  padding: 12 0 0 5;
+  margin-left: 40px;
+  margin-right: -20px;
+}
+
+.mobile-weather{
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
 
 /*Footer Section Styling*/
 
 
 @media screen and (max-width:767px){
-  .mobile-section, .mobile-navbar{
-    display:inline !important;
-  }
-
   .rightsidebar, .leftsidebar, .sideads, .header, .navbar {
     display:none;
-
   }
+
+  .mobile-head, .mobile-navbar{
+    display: flex !important;
+  }
+
       div.dataTables_wrapper {
           margin-left: -5;
       }
@@ -328,8 +319,8 @@ color: #000;
   margin: 10;
 }
 h1{
-  margin: 15 0 0 0 !important;
-  font-size: 30px !important;
+  margin: 10 0 10 0 !important;
+  font-size: 30px;
 }
   #table_id{
     font-size: 0.8em;
@@ -343,10 +334,10 @@ h1{
     margin: 10px auto;
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 60px auto auto auto;
+    grid-template-rows: 80px 50px auto auto auto;
     grid-template-areas:
-      'hd'
-      'nv'
+      'mbhd'
+      'mbnv'
       'title'
       'main'
       'ft';
