@@ -10,7 +10,7 @@
       'nv nv nv nv nv nv nv nv nv nv nv nv'
       'left title title title title title title title . . . right'
       'left main main main main main main main ad ad ad right'
-      'left ft ft ft ft ft ft ft ft ft ft right';
+      'left ft ft ft ft ft ft ft . . . right';
 
 }
 
@@ -20,6 +20,8 @@
 }
 
 .header{
+  font-size: 11px;
+  font-family: Arial,sans-serif;
   grid-area: hd;
   background-color: #000000;
   padding: 10px 0px 0px 0px;
@@ -29,22 +31,50 @@
 /*Setting Flex Basis for Header*/
 
 .header-left{
-  flex-basis:35%;
-  padding: 0 30;
-}
-.header-center{
-  flex-basis:30%;
-}
-.header-right{
-  flex-basis:35%;
-  flex-direction: flex-end;
+padding-left: 75px;
 }
 
+.header-center{
+  padding-left: 240px;
+}
+
+.header-right{
+  padding-left: 370px;
+}
 
 .navbar{
   grid-area: nv;
   background-color:#E6E6E6;
   outline: 1px solid #999999;
+  display: flex;
+  font-size: 10px;
+  font-family: Arial,sans-serif;
+  color: #666;
+  text-transform: uppercase;
+  padding: 19px
+}
+
+/*Setting Flex Basis for Navbar*/
+.leftspacer{
+flex-basis:4%;
+}
+
+.navbar-left{
+  flex-basis:26%;
+  justify-content: flex-start;
+}
+.navbar-center{
+  flex-basis:40%;
+  align-items: center;
+  justify-content: space-around;
+}
+.rightspacer{
+  flex-basis: 20%;
+}
+
+.navbar-right{
+  flex-basis:10%;
+  justify-content:flex-start;
 }
 
 .leftsidebar{

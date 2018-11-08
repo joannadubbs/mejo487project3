@@ -21,23 +21,33 @@
 
         <div class="header flex">
           <div class="header-left flex">
-              <i class="fas fa-bars" style="color:white"></i>
-              <p id="header-sections" style="color:white">SECTIONS</p>
-              <i class="fas fa-search" style="color:white"></i>
+              <img src="img/hamburger.png" src="hamburger button" style="height:25; padding-right:10px" class="flex" />
+              <p id="header-sections" style="color:white; width:60">SECTIONS</p>
+              <img src="img/search.png" src="hamburger button" style="height:35; padding-right:7px" class="flex" />
               <p id="header-search" style="color:white">SEARCH</p>
           </div>
           <div class="header-center flex">
-            <img id="header-logo"src="img/logo.png" alt="Header Logo" height="30"/>
+            <img id="header-logo"src="img/logo.png" alt="Header Logo" height="35"/>
           </div>
           <div class= "header-right flex">
             <img id="header-avatar" src="img/avatar.png" alt="Avatar Logo" style="height:40"/>
           </div>
-
-
-
         </div>
 
-        <div class="navbar"></div>
+        <div class="navbar">
+          <div class="leftspacer"></div>
+          <div class="navbar-left flex">
+            WEDNESDAY NOV. 7, 2018
+          </div>
+          <div class="navbar-center flex">
+            <span>CAREGIVERS</span>  <span>CARS</span>  <span>HOMES</span>  <span>JOBS</span>  <span>ALMANAC</span>  <span>CONTACT US</span>  <span>TODAY'S PAPER</span>  <span>REWARDS</span>
+          </div>
+          <div class="rightspacer"></div>
+          <div class="navbar-right flex">
+            <img src="img/clouds.png" alt="Clouds Icon" style="height:28"/>
+            <p style="font-size:18px; font-family:Georgia "><strong>68°</strong></p>
+          </div>
+        </div>
         <div class="leftsidebar"></div>
         <div class="title">
           <div class="social">
@@ -45,7 +55,7 @@
             <i class="fab fa-twitter"></i>
             <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
         </div>
-          <h1>Insert Article Title Here</h1>
+          <h1>Increasing Rates of People in the US Seeking Medical Care for Traumatic Brain Injuries</h1>
         </div>
         <div class="main">
           <img src="img/tbi.jpg" alt="CAT scan" style="width:95% !important"/>
@@ -57,23 +67,19 @@
           </p>
           <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
           <div class="story">
-            <span id="firstletter">T</span>his is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
-            This is some text. This is some text.
+            <span id="firstletter">T</span>he Centers for Disease Control and Prevention (CDC) reports that from 2001 to 2010, the overall rates of traumatic brain injury (TBI)-related emergency department visits and hospitalizations increased in the United States, while rates of TBI-related deaths decreased.
+            <br/>
+            <p>According to the CDC, an estimated 1.7 million TBIs occur in the United States each year. While the CDC reports do not include data prior to 2001 nor after 2010, some trends emerged within those years. The CDC’s data accounts for population changes in the US because the rates are determined per 100,000 people.</p>
           <br/>
           </div>
           <br />
         <div id="container" ></div>
         <br />
+        <p>From 2001 to 2010, there was an overall increase in TBI-related emergency department visits, a slight increase in TBI-related hospitalizations, and a slight decrease in TBI-related deaths. TBI-related emergency department visits increased from a rate in 2001 of 420.6 per 100,000 people to 715.7 per 100,000 people in 2010. TBI-related hospitalizations increased from 2001 to 2010 from 82.7 per 100,000 people to 92.7 per 100,000 people. TBI-related deaths decreased from 2001 to 2010 from a rate of 18.5 deaths per 100,000 people to 17.1 deaths per 100,000 people.
+        </p>
         <div id="bargraph"></div>
         <br />
+        <p>While overall rates for combined TBI-related emergency department visits, hospitalizations, and deaths increased from 2001 to 2010, the biggest increases were amongst males. Rates of TBI amongst men increased from 26% higher than rates for women in 2007 to 61% higher in 2008 before evening out more by 2010. </p>
         <table id="table_id" class="display" style="width:100%">
           <p id="tableheader">Rates of Traumatic Brain Injury related Deaths per 100,000 people by Age Group in the United States, 2001-2010</p>
           <p id="tablesubheader-source">Source: Centers for Disease Control and Prevention</p>
@@ -142,6 +148,11 @@
         </tbody>
 
     </table>
+    <br />
+    <p>From 2001 to 2010, the rates of TBI-related deaths decreased for individuals 44 years of age and younger, remained stable for individuals from 45 to 64 years of age, and increased in individuals for individuals 65 years and older. </p>
+    <p>TBI-related death rates decreased from 2001 to 2010 from 5.2 to 4.3 deaths per 100,000 children aged four and younger, from 3.2 to 1.9 deaths per 100,000 adolescents aged five to 14, from 23.4 to 15.6 deaths per 100,000 individuals aged 15 to 24, and from 17.6 to 14.6 deaths per 100,000 adults aged 25 to 44. </p>
+    <p>TBI-related death rates remained fairly stable amongst adults aged 45 to 64, from 17.5 deaths per 100,000 in 2001 to 17.6 deaths per 100,000 in 2010. </p>
+    <p>Over the nine years, rates of TBI-related deaths increased from 41.2 to 45.2 deaths per 100,000 individuals aged 65 years and older. </p>
     <br />
 
           <!--<p id="footer-email" class="footer-text"><strong>joannalw@live.unc.edu</strong></p>
@@ -230,7 +241,7 @@
                     </p>
                     <p class="caption footer-margin">NOVEMBER 2, 2018, 12:00 PM</p>
                     <div class="story footer-margin" style="margin-bottom: 8">
-                      <span id="firstletter">A</span> recent study has found that some foods you may want to buy organic. 
+                      <span id="firstletter">A</span> recent study has found that some foods you may want to buy organic.
                     <br/>
                     </div>
                     <a href="#"><strong>Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
