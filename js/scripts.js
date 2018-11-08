@@ -11,7 +11,7 @@ $(function(){
   var year = [];
 
 
-      $.ajax({
+      $.ajax({ // ajax call for Line Graph
         type: 'GET',
         dataType: 'json',
         data: data,
@@ -26,13 +26,13 @@ $(function(){
             deaths.push(data[i].Deaths);
             year.push(data[i].Year)
           }
-          buildChart();
+          buildChart(); //Call the function
           console.log(emergency);
           console.log(hospitalizations);
           console.log(deaths);
         }
       });
-      function buildChart(){
+      function buildChart(){ //Line Graph---> Set Title, Axis, Legend
       var myChart = Highcharts.chart('container', {
 
           title: {
@@ -102,7 +102,7 @@ $(function(){
 });//closing of function
 
 
-Highcharts.chart('bargraph', {
+Highcharts.chart('bargraph', { //HighChart Bargraph
     chart: {
         type: 'column'
     },
@@ -150,14 +150,14 @@ Highcharts.chart('bargraph', {
     },
     series: [{
         name: 'Male',
-        data: [626.4, 660.6, 649.8, 732.1, 732.3, 689.6, 634.1, 863.6, 982.3, 932.1],
+        data: [626.4, 660.6, 649.8, 732.1, 732.3, 689.6, 634.1, 863.6, 982.3, 932.1], //Data points starting with 2001 and going to 2010
         color: '#369999'
 
     }, {
         name: 'Female',
-        data: [420.9, 419.3, 426.3, 475.9, 503.9, 504.7, 502.5, 599, 607.6, 720.3],
+        data: [420.9, 419.3, 426.3, 475.9, 503.9, 504.7, 502.5, 599, 607.6, 720.3], //Data points starting with 2001 and going to 2010
         color: '#c8e6e6'
     }]
 });
 
-$('#table_id').DataTable();
+$('#table_id').DataTable(); //Call it

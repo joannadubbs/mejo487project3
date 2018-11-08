@@ -11,7 +11,7 @@
     <meta name="keywords" content="HTML,CSS">
     <meta name="author" content="Joanna Williams">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---Font Awesome CDN-->
+    <!---Font Awesome CDNs-->
     <script src="https://use.fontawesome.com/5fb475e2d1.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
@@ -19,71 +19,107 @@
 
     <body class="site">
 
-        <div class="header flex">
-          <div class="header-left flex">
+        <div class="header flex"> <!--Header-->
+
+          <div class="header-left flex"> <!--Set Flex-->
               <img src="img/hamburger.png" src="hamburger button" style="height:25; padding-right:10px" class="flex" />
               <p id="header-sections" style="color:white; width:60">SECTIONS</p>
               <i class="fas fa-search" style="color:white; width: 30; padding-left:10px"></i>
               <p id="header-search" style="color:white">SEARCH</p>
           </div>
+
           <div class="header-center flex">
             <img id="header-logo"src="img/logo.png" alt="Header Logo" height="35"/>
           </div>
+
           <div class= "header-right flex">
             <img id="header-avatar" src="img/avatar.png" alt="Avatar Logo" style="height:40"/>
           </div>
-        </div>
 
-        <div class="navbar">
-          <div class="leftspacer"></div>
-          <div class="navbar-left flex">
+        </div> <!--Close Header-->
+
+        <div class="navbar"> <!--Navbar-->
+
+          <div class="leftspacer"></div> <!--Adds a Left Space to the Navbar for Positioning-->
+
+          <div class="navbar-left flex"> <!--Date in the Navbar-->
             WEDNESDAY NOV. 7, 2018
           </div>
-          <div class="navbar-center flex">
+
+          <div class="navbar-center flex"> <!--Main Navbar Content-->
             <span>CAREGIVERS</span>  <span>CARS</span>  <span>HOMES</span>  <span>JOBS</span>  <span>ALMANAC</span>  <span>CONTACT US</span>  <span>TODAY'S PAPER</span>  <span>REWARDS</span>
           </div>
-          <div class="rightspacer"></div>
+
+          <div class="rightspacer"></div> <!--Adds a Right Space to the Navbar for Positioning-->
+
           <div class="navbar-right flex">
             <img src="img/clouds.png" alt="Clouds Icon" style="height:28"/>
             <p style="font-size:18px; font-family:Georgia "><strong>68°</strong></p>
           </div>
-        </div>
-        <div class="leftsidebar"></div>
-        <div class="title">
+
+        </div> <!--Closes the Navbar-->
+
+        <div class="leftsidebar"></div> <!--Blank Left Side Bar for Implementing San Diego Union Tribune's Styling using Grid-->
+
+        <div class="title"> <!--Title Class: contains social media icons & headlines-->
+
+          <!--Social Media Icons-->
           <div class="social">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
         </div>
+
+          <!--Headline-->
           <h1>Increasing Rates of People in the US Seeking Medical Care for Traumatic Brain Injuries</h1>
-        </div>
-        <div class="main">
-          <img src="img/tbi.jpg" alt="CAT scan" style="width:95% !important"/>
+
+        </div> <!--Closes Title-->
+
+        <div class="main"> <!--Main Section: Includes Article photo, byline, story, charts-->
+
+          <!--Article Photo & caption-->
+          <img class="catscan" src="img/tbi.jpg" alt="CAT scan" style="width:95% !important"/>
           <p class="caption" style="color:#999; font-size:12px">CAT Scan for Traumatic Brain Injuries. (Getty Images)</p>
+
+          <!--Byline & Byline Headshot-->
           <p id="byline" class="flex">
             <img src="img/headshot.jpg" alt="Headshot" height="70"/>
             <span class="byline-cap" style="margin: 0 3 0 10">By </span>
             <span class="author"><a href="http://www.joannalynwilliams.com"><strong> Joanna Williams</strong></a> <span class="dot" style="font-size:8px;"></span><strong> Contact Reporter</strong></span>
           </p>
+
+          <!--Story Date-->
           <p class="caption">NOVEMBER 7, 2018, 12:00 PM</p>
+
+          <!--Story Content: First Few paragraphs-->
           <div class="story">
             <span id="firstletter">T</span>he Centers for Disease Control and Prevention (CDC) reports that from 2001 to 2010, the overall rates of traumatic brain injury (TBI)-related emergency department visits and hospitalizations increased in the United States, while rates of TBI-related deaths decreased.
             <br/>
             <p>According to the CDC, an estimated 1.7 million TBIs occur in the United States each year. While the CDC reports do not include data prior to 2001 nor after 2010, some trends emerged within those years. The CDC’s data accounts for population changes in the US because the rates are determined per 100,000 people.</p>
           <br/>
-          </div>
-          <br />
-        <div id="container" ></div>
-        <br />
+        </div>
+
+        <br /> <!--Page Break between paragraph & line graph-->
+
+        <div id="container" ></div> <!--Line Graph-->
+
+        <br /> <!--Page Break between line graph & paragraph pertaining to it-->
+
         <p>From 2001 to 2010, there was an overall increase in TBI-related emergency department visits, a slight increase in TBI-related hospitalizations, and a slight decrease in TBI-related deaths. TBI-related emergency department visits increased from a rate in 2001 of 420.6 per 100,000 people to 715.7 per 100,000 people in 2010. TBI-related hospitalizations increased from 2001 to 2010 from 82.7 per 100,000 people to 92.7 per 100,000 people. TBI-related deaths decreased from 2001 to 2010 from a rate of 18.5 deaths per 100,000 people to 17.1 deaths per 100,000 people.
         </p>
-        <div id="bargraph"></div>
-        <br />
-        <p>While overall rates for combined TBI-related emergency department visits, hospitalizations, and deaths increased from 2001 to 2010, the biggest increases were amongst males. Rates of TBI amongst men increased from 26% higher than rates for women in 2007 to 61% higher in 2008 before evening out more by 2010. </p>
+
+        <div id="bargraph"></div> <!--Bargraph-->
+
+        <br /> <!--Page Break between bar graph & paragraph pertaining to it-->
+
+        <p>Overall rates for combined TBI-related emergency department visits, hospitalizations, and deaths increased from 2001 to 2010, and the biggest increases were amongst males. The overall rate of TBI amongst men was 26% higher than the rate for women in 2007, but then by 2009, the rate for men was 61% higher than the rate for women. </p>
+
+        <!--Table-->
         <table id="table_id" class="display" style="width:100%">
           <p id="tableheader">Rates of Traumatic Brain Injury related Deaths per 100,000 people by Age Group in the United States, 2001-2010</p>
           <p id="tablesubheader-source">Source: Centers for Disease Control and Prevention</p>
-        <thead>
+
+        <thead> <!--Table Head-->
             <tr>
                 <th>Years</th>
                 <th> Age 0 - 4 years </th>
@@ -94,7 +130,8 @@
                 <th> Age 65+ years </th>
             </tr>
         </thead>
-        <tbody>
+
+        <tbody> <!--Table Body-->
             <tr>
                 <td>2001-2002</td> <!--Year-->
                 <td>5.2</td>     <!--Ages 0-4-->
@@ -148,27 +185,30 @@
         </tbody>
 
     </table>
-    <br />
-    <p>From 2001 to 2010, the rates of TBI-related deaths decreased for individuals 44 years of age and younger, remained stable for individuals from 45 to 64 years of age, and increased in individuals for individuals 65 years and older. </p>
+
+    <br /> <!--Page Break between table & final paragraphs of story -->
+    <p>From 2001 to 2010, the rates of TBI-related deaths decreased for individuals 44 years of age and younger, remained stable for individuals from 45 to 64 years of age, and increased in individuals 65 years and older. </p>
     <p>TBI-related death rates decreased from 2001 to 2010 from 5.2 to 4.3 deaths per 100,000 children aged four and younger, from 3.2 to 1.9 deaths per 100,000 adolescents aged five to 14, from 23.4 to 15.6 deaths per 100,000 individuals aged 15 to 24, and from 17.6 to 14.6 deaths per 100,000 adults aged 25 to 44. </p>
     <p>TBI-related death rates remained fairly stable amongst adults aged 45 to 64, from 17.5 deaths per 100,000 in 2001 to 17.6 deaths per 100,000 in 2010. </p>
-    <p>Over the nine years, rates of TBI-related deaths increased from 41.2 to 45.2 deaths per 100,000 individuals aged 65 years and older. </p>
+    <p>Over the decade, rates of TBI-related deaths increased from 41.2 to 45.2 deaths per 100,000 individuals aged 65 years and older. </p>
     <br />
 
-          <!--<p id="footer-email" class="footer-text"><strong>joannalw@live.unc.edu</strong></p>
-          <div class="footer-box">
-            <p id="footer-box-toptext" class="footer-text"><strong>Sign up for the North County newsletter and get essential news and compelling feature stories from North San Diego County delivered to your inbox.</strong></p>
-          </div>  THIS IS CODE FROM AN UPDATE ON THEIR WEBSITE...Omitting because it does not follow the style of the old article I'm referencing-->
-          <p class="caption">Copyright © 2018, The San Diego Union-Tribune</p>
-          <p id="bottomline">
-            <strong>This article is related to:</strong>
-            <span class="links">Health</span>
-          </p>
+    <!--Copyright-->
+    <p class="caption">Copyright © 2018, The San Diego Union-Tribune</p>
+
+    <p id="bottomline">
+        <strong>This article is related to:</strong>
+        <span class="links">Health</span>
+    </p>
+
+    <!--Social Icons-->
           <div class="social">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
           </div>
+
+    <!--"Be The First To Comment" Button-->
           <a href="#" class="button flex"><strong>BE THE FIRST TO COMMENT</strong></a>
 
         </div>  <!--Closes Main Section-->
@@ -179,95 +219,139 @@
         </div>
 
         <div class="rightsidebar"></div> <!--Margin Right-->
-        <div class="line"></div>
+        <div class="line"></div> <!--Sets a bottom border under the main content-->
+
         <div class="footer"><!--Footer-->
+
         <!--Additional Article #1-->
           <div class="title">
+            <!--Social Icons-->
             <div class="social footer-margin">
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
               <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
           </div>
+            <!--Headline-->
             <h1 class="footer-margin">Infant Mortality Rates in the US are Higher than Other Developed Countries</h1>
           </div>
+            <!--Byline-->
             <p id="byline" class="flex footer-margin">
               <img src="img/headshot.jpg" alt="Headshot" height="70"/>
               <span class="byline-cap" style="margin: 0 3 0 10">By </span>
               <span class="author"><a href="http://www.joannalynwilliams.com"><strong>  Joanna Williams</strong></a></span>
             </p>
+
+            <!--Date-->
             <p class="caption footer-margin">NOVEMBER 6, 2018, 12:00 PM</p>
+
+            <!--Story Preview Text-->
             <div class="story footer-margin" style="margin-bottom: 8">
               <span id="firstletter">T</span>he United States has higher infant mortality rates than any other developed country.
             <br/>
             </div>
-            <a href="#"><strong> Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+            <!--"Read Full Story" Arrow Icon-->
+            <a class="fullstory" href="#"><strong> Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
 
             <!--Additional Article #2-->
               <div class="title" style="border-top: 1px solid #CCC">
                 <br />
+
+                <!--Social Icons-->
                 <div class="social footer-margin">
                   <i class="fab fa-facebook-f"></i>
                   <i class="fab fa-twitter"></i>
                   <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
               </div>
+
+              <!--Headline-->
                 <h1 class="footer-margin">Why Doctors are Now Screening Pregnant Women for Thyroid Issues</h1>
-              </div>
+              </div> <!--Title Closing-->
+
+              <!--Byline-->
                 <p id="byline" class="flex footer-margin">
                   <img src="img/headshot.jpg" alt="Headshot" height="70"/>
                   <span class="byline-cap" style="margin: 0 3 0 10">By </span>
                   <span class="author"><a href="http://www.joannalynwilliams.com"><strong>  Joanna Williams</strong></a></span>
                 </p>
+
+                <!--Date-->
                 <p class="caption footer-margin">NOVEMBER 4, 2018, 12:00 PM</p>
+
+                <!--Story Preview Text-->
                 <div class="story footer-margin" style="margin-bottom: 8">
                   <span id="firstletter">D</span>octors are now screening pregnant patients for thyroid issues.
                 <br/>
                 </div>
-                <a href="#"><strong> Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+
+                <!--"Read Full Story" Arrow Icon-->
+                <a class="fullstory" href="#"><strong> Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
 
                 <!--Additional Article #3-->
                   <div class="title" style="border-top: 1px solid #CCC">
                     <br />
+
+                    <!--Social Icons-->
                     <div class="social footer-margin">
                       <i class="fab fa-facebook-f"></i>
                       <i class="fab fa-twitter"></i>
                       <img src="img/emailicon.jpg" id="email-icon" alt="Email Icon" height="15"/>
-                  </div>
+                    </div>
+
                     <h1 class="footer-margin"> 10 Foods You Should Always Buy Organic, According to Scientists </h1>
-                  </div>
+                  </div> <!--Closes Title-->
+
+                  <!--Byline-->
                     <p id="byline" class="flex footer-margin">
                       <img src="img/headshot.jpg" alt="Headshot" height="70"/>
                       <span class="byline-cap" style="margin: 0 3 0 10">By </span>
                       <span class="author"><a href="http://www.joannalynwilliams.com"><strong>  Joanna Williams</strong></a></span>
                     </p>
+
+                    <!--Date-->
                     <p class="caption footer-margin">NOVEMBER 2, 2018, 12:00 PM</p>
+
+                    <!--Story Preview Text-->
                     <div class="story footer-margin" style="margin-bottom: 8">
                       <span id="firstletter">A</span> recent study has found that some foods you may want to buy organic.
                     <br/>
                     </div>
-                    <a href="#"><strong>Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+
+                    <!--"Read Full Story" Arrow Icon-->
+                    <a class="fullstory" href="#"><strong>Read Full Story </strong></a><img style="height:10"src="img/rightarroworange.png" alt="orange right arrow" />
+
+                    <!--Added Page Breaks at the Bottom-->
                     <br />
                     <br />
                     <br />
+
         </div> <!--Closes Footer-->
 
+        <!--Mobile Section-->
+
+        <!--Mobile Header-->
         <div class="mobile-head">
           <img src="img/hamburger.png" src="hamburger button" style="height:30; padding-right: 50px" />
           <img id="header-logo"src="img/logo.png" alt="Header Logo" height="20"/>
         </div>
+
+        <!--Mobile Navbar-->
         <div class="mobile-navbar">
             <span class="mobile-text">CAREGIVERS</span><span class="mobile-text">CARS</span><span class="mobile-text">HOMES</span><span class="mobile-text">JOBS</span>
             <img class="mobile-cloud" src="img/clouds.png" alt="Clouds Icon" style="height:28"/>
             <p class="mobile-weather" style="font-size:18px; font-family:Georgia "><strong>68°</strong></p>
         </div>
 
+        <!--JQuery Links-->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <!--HighCharts Links-->
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/series-label.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <!--JS Links-->
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
         <script src="js/scripts.js"></script>
 
-    </body>
+    </body> <!--Close Site-->
 
 </html>

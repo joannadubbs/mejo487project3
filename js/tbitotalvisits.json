@@ -1,7 +1,7 @@
 [
   {
     "Year": 2001,
-    "EmergencyDepartmentVisits": 420.6,
+    "EmergencyDepartmentVisits": 420.6, 
     "Hospitalizations": 82.7,
     "Deaths": 18.5,
     "Total": 521

@@ -1,24 +1,24 @@
 @supports(grid-area:auto){
 
-  .site{
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 50px auto auto auto;
-    grid-template-areas:
-      'hd hd hd hd hd hd hd hd hd hd hd hd'
-      'nv nv nv nv nv nv nv nv nv nv nv nv'
-      'left title title title title title title title . . . right'
-      'left main main main main main main main ad ad ad right'
-      'left ft ft ft ft ft ft ft . . . right';
-
+.site{
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 50px auto auto auto;
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd hd hd hd hd'
+    'nv nv nv nv nv nv nv nv nv nv nv nv'
+    'left title title title title title title title . . . right' /*Left and Right space on the side*/
+    'left main main main main main main main ad ad ad right' /*Left and right space on the side*/
+    'left ft ft ft ft ft ft ft . . . right'; /*left and right whitespace on the side*/
 }
 
-.flex{
+.flex{ /*Flex Class Setting*/
   display: flex;
   align-items: center;
 }
 
+/*Header Settings*/
 .header{
   font-size: 11px;
   font-family: Arial,sans-serif;
@@ -42,6 +42,7 @@ padding-left: 75px;
   padding-left: 370px;
 }
 
+/*Navbar Settings*/
 .navbar{
   grid-area: nv;
   background-color:#E6E6E6;
@@ -55,36 +56,47 @@ padding-left: 75px;
 }
 
 /*Setting Flex Basis for Navbar*/
+
+/*Empty Left Space*/
 .leftspacer{
 flex-basis:4%;
 }
 
+/*Hamburger Button*/
 .navbar-left{
   flex-basis:26%;
   justify-content: flex-start;
 }
+
+/*Logo*/
 .navbar-center{
   flex-basis:40%;
   align-items: center;
   justify-content: space-around;
 }
+
+/*Empty Right Space*/
 .rightspacer{
   flex-basis: 20%;
 }
 
+/*Login/Avatar Icon*/
 .navbar-right{
   flex-basis:10%;
   justify-content:flex-start;
 }
 
+/*Whitespace for grid*/
 .leftsidebar{
   grid-area: left;
 }
 
+/*Whitespace on right for grid*/
 .rightsidebar{
   grid-area:right;
 }
 
+/*Where ads would go*/
 .sideads{
   grid-area: ad;
   font-family: Arial;
@@ -92,12 +104,14 @@ flex-basis:4%;
   color: #999;
 }
 
+/*Social Media Icons & Article Healine */
 .title{
   grid-area:title;
   margin-top: 30px;
   margin-bottom: -15px;
 }
 
+/*Main Story Section*/
 .main{
   grid-area:main;
   margin-bottom: 18px;
@@ -105,56 +119,69 @@ flex-basis:4%;
   font-size: 15px/24px;
   color: #333;
 }
+
+/*Sets a Bottom Border under Main Article*/
 .line{
   grid-area:line;
-
 }
+
+/*Footer Styling*/
 .footer{
   grid-area:ft;
   border-top: 1px solid #CCC;
 }
 
+/*Separate class to change the margin of certain elements within the footer*/
 .footer-margin{
   margin-left: 10%;
 }
 
+/*Headline, used in "other articles" section as well*/
 h1{
     font-family: Georgia,'Droid Serif',serif;
     font-weight: lighter;
     font-size: 54px;
 }
 
+/*Social Icons from FontAwesome*/
 .fab{
   height: 20px;
   margin-right: 25px;
 }
 
+/*Social Icons Class: Includes FontAwesome Icons & Photoshop Icons*/
 .social{
   margin-bottom: -20px;
 }
 
+/*Facebook Icon*/
 .fa-facebook-f{
   color:#23408F;
 }
 
+/*Twitter Icon*/
 .fa-twitter{
   color:#4FABDA;
 }
 
+/*Sets Link Styling*/
 .links{
   color: #4591B8;
   font-family: Arial, sans-serif;
 }
 
+/*Byline Styling*/
 #byline{
   font-family: Georgia,'Droid Serif',serif;;
 }
 
+/*Caption for the Byline*/
 .byline-cap{
   color: #666;
   font-size: 14px;
 }
 
+/*Creates a Dot between Author & Contact Reporter*/
 .dot {
   height: 4px;
   width: 4px;
@@ -164,6 +191,7 @@ h1{
   margin-bottom: 2px;
 }
 
+/*Author Styling*/
 .author, a{
   color:  #FF5443;
   font-family: Georgia,'Droid Serif',serif;;
@@ -171,6 +199,7 @@ h1{
   font-size: 14px;
 }
 
+/*Makes the First letter of the article bigger*/
 #firstletter {
     float: left;
     width: 0.7em;
@@ -182,20 +211,24 @@ h1{
     padding-right: 10px;
 }
 
+/*Ads a caption to area where an advertisment would be*/
 #adcaption{
   margin-top: 8px;
 }
 
+/*Caption class styling*/
 .caption{
   font-family: Arial;
   font-size: 10px;
   color: #666;
 }
 
+/*Special Bottom Border*/
 #bottomline{
 font-family: Arial;
 }
 
+/*Line Graph Styling*/
 #container {
   width:100%;
 	min-width: 310px;
@@ -204,20 +237,24 @@ font-family: Arial;
 	margin-left: -10;
 }
 
+/*Bar Graph Styling*/
 #bargraph{
   min-width: 310px;
   height: 400px;
   margin-left: -10;
 }
 
+/*Table Styling*/
 #table_id{
   width:100%;
 }
 
+/*Changes Font in the Line Graph & Bar Graph to fit w/ San Diego Union Tribune styling*/
 svg.highcharts-root{
   font-family: Georgia,'Droid Serif',serif !important;
 }
 
+/*Customizes the Header of HighCharts Graphs*/
 #tableheader{
 font-family: Georgia,'Droid Serif',serif !important;
 color: #333333;
@@ -226,6 +263,7 @@ fill: #333333;
 text-align: center;
 }
 
+/*Customizes the subheader/sources for HighCharts Graphs*/
 #tablesubheader-source{
   font-family: Georgia,'Droid Serif',serif !important;
   color: #666666;
@@ -234,6 +272,7 @@ text-align: center;
   text-align:center;
 }
 
+/*"Be The First To Comment" Button*/
 .button {
     border: 1px solid #FF5443;
     color: #FF5443;
@@ -253,14 +292,16 @@ text-align: center;
 
 }
 
+/*Changes Button Styling on Hover*/
 .button:hover{
   background-color: #FF5443;
   color:white;
 }
 
+/*Mobile Header Settings*/
 .mobile-head{
   grid-area:mbhd;
-  display: none !important;
+  display: none !important; /*Hidden unless go to 700px*/
   background-color: #000000;
   font-size: 11px;
   font-family: Arial,sans-serif;
@@ -268,9 +309,10 @@ text-align: center;
   padding: 20 0 0 20;
 }
 
+/*Mobile Navbar Styling*/
 .mobile-navbar{
   grid-area:mbnv;
-  display: none !important;
+  display: none !important; /*Hidden unless go to 700px*/
   background-color: #E6E6E6;
   font-size: 12px;
   display: flex;
@@ -280,34 +322,47 @@ text-align: center;
   border-bottom: 1px solid #999999;
 }
 
+/*Styles the Mobile Navbar & Header Text*/
 .mobile-text{
   padding: 20 0 0 0;
   color: #666;
 }
 
+/*Styles the Cloud Icon on Mobile*/
 .mobile-cloud{
   padding: 12 0 0 5;
   margin-left: 40px;
   margin-right: -20px;
 }
 
+/*Styles the Weather Info on Mobile*/
 .mobile-weather{
   padding-right: 10px;
   padding-bottom: 5px;
 }
 
-/*Footer Section Styling*/
 
-
+/*Sets Mobile Display*/
 @media screen and (max-width:767px){
-  .rightsidebar, .leftsidebar, .sideads, .header, .navbar {
+  .rightsidebar, .leftsidebar, .sideads, .header, .navbar, .button {
     display:none;
   }
 
+  /*Changes the footer & "see full story" button margins to fit mobile better*/
+  .footer-margin{
+  margin: 15 20 10!important;
+  }
+
+  .fullstory{
+    margin: 5 10 0 20 !important;
+  }
+
+  /*Sets Mobile Header and Navbar to be displayed & flex*/
   .mobile-head, .mobile-navbar{
     display: flex !important;
   }
 
+  /*Fixes margin issues on mobile*/
       div.dataTables_wrapper {
           margin-left: -5;
       }
@@ -315,33 +370,46 @@ text-align: center;
         padding: 5px 10px !important;
     }
 
-.footer, .title, .fab, .byline, .byline-cap, .author, .caption, .story, #bottomline{
-  margin: 10;
-}
-h1{
-  margin: 10 0 10 0 !important;
-  font-size: 30px;
-}
-  #table_id{
+    /*Fixes margin issues on mobile*/
+    .footer, .title, .fab, .byline, .byline-cap, .author, .caption, .story, #bottomline{
+      margin: 10;
+    }
+
+    /*Fixes Headline margins & reduces font size for mobile*/
+    h1{
+      margin: 10 0 10 0 !important;
+      font-size: 30px;
+    }
+
+    /*Fixes font size on Table so that Table is mobile-friendly & fits*/
+    #table_id{
     font-size: 0.8em;
-  }
+    }
 
-  th{
+    /*Fixes sizing of table header so table will fully display on mobile*/
+    th{
     padding-right: -15px;
+    }
+
+    /*Fixes article photo to be centered on mobile*/
+    .catscan{
+      margin-left: 10;
+    }
+
+  /*Changes the Grid on Mobile*/
+    .site{
+      margin: 10px auto;
+      display:grid;
+      grid-template-columns: 100%; /*Changes to 1fr */
+      grid-template-rows: 80px 50px auto auto auto;
+      grid-template-areas: /*Changes the order of sections*/
+        'mbhd'
+        'mbnv'
+        'title'
+        'main'
+        'ft';
   }
 
-  .site{
-    margin: 10px auto;
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 80px 50px auto auto auto;
-    grid-template-areas:
-      'mbhd'
-      'mbnv'
-      'title'
-      'main'
-      'ft';
-  }
-}
+} /*Closes Media Query*/
 
-}
+} /*Closes site grid*/
